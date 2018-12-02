@@ -4,7 +4,61 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<ion-content style="background-color: whitesmoke">
+  <ion-button size="full" fill="outline" (click)="nextpage()">
+    <ion-icon name="contact" padding-right="2px"></ion-icon> invite & earn
+  </ion-button>
+  <ion-list>
+    <ion-item (click)="OpenDrpage()">
+      <ion-icon float-left style="font-size: 30px; color:#0077FE; padding-left:15px; padding-top:5px" name="calendar"></ion-icon>
+      <div float-right style="margin-left:10px">
+        <h6><b>Search doctors, book appointments</b></h6>
+        <p style="margin-top: -10px">Find doctors, clinics, hospitals and more...</p>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon float-left style="font-size: 30px; color:#0077FE; padding-left:15px; padding-top:5px" name="text"></ion-icon>
+      <div float-right style="margin-left:10px">
+        <h6><b>Chat with a top doctor</b></h6>
+        <p style="margin-top: -10px">Find doctors, clinics, hospitals and more...</p>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon float-left style="font-size: 30px; color:#0077FE; padding-left:15px; padding-top:5px" name="cart"></ion-icon>
+      <div float-right style="margin-left:10px">
+        <h6><b>Order medicines</b></h6>
+        <p style="margin-top: -10px">Find doctors, clinics, hospitals and more...</p>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon float-left style="font-size: 30px; color:#0077FE; padding-left:15px; padding-top:5px" name="medical"></ion-icon>
+      <div float-right style="margin-left:10px">
+        <h6><b>Book tests, checkups and scans</b></h6>
+        <p style="margin-top: -10px">Find doctors, clinics, hospitals and more...</p>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-button size="full" shape="block" fill="outline">Ask Question?</ion-button>
+  <ion-button size="full" shape="block" fill="outline">Add medical record</ion-button>
+  <ion-button size="full" shape="block" fill="outline">Set medicine reminder</ion-button>
+
+  <ion-card>
+    <img src="assets/imgs/1.jpeg">
+    <ion-card-content>
+        <h2><b>Upto 40% OFF on medicines</b></h2>
+        <p>40% = 25% OFF + 15% cashback on prescrition medicines only. Healthcash credited within 24hrs of order delivery. Max cashback per order: 75.</p>
+        <p><b>Use code: 123456</b></p>
+      </ion-card-content>
+    <ion-button size="full">Order Now</ion-button>
+  </ion-card>
+  <ion-card>
+      <img src="assets/imgs/2.png">
+      <ion-card-content>
+        <h2><b>Health Checkups come home for Rs.649/-</b></h2>
+        <p>A full physical examination is a general examination of the body performed by the doctor or general practitioner (GP).</p>
+        <p><b>Use code: 123456</b></p>
+      </ion-card-content>
+      <ion-button size="full">Checkup Now</ion-button>
+    </ion-card>
 </ion-content>

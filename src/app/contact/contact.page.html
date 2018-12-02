@@ -1,23 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-toolbar>
+<ion-header style="height: 40%">
+<div class="dp-containter">
+  
+    <button float-right id="settings"><ion-icon name="md-settings"></ion-icon></button>
+  <div class="p-img">
+    <img src="assets/imgs/3.png" style="max-height:100px;max-width: 100px;border-radius: 50%">
+  </div>
+<h3 text-center style="color: white">Syed Waqas Ali</h3>
+</div>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Follow us on Twitter
-      </ion-label>
-    </ion-list-header>
-    <ion-item>
-      <ion-label>
-        <ion-icon name="logo-ionic" slot="start"></ion-icon>
-        @ionicframework
-      </ion-label>
-    </ion-item>
-  </ion-list>
-</ion-content>
+<ion-item-divider><h5>Profile Options</h5></ion-item-divider>
+      <ion-list>
+          <ion-item *ngFor="let item of items">
+            <ion-icon name="{{item.icon}}"></ion-icon>
+            <h3>{{item.title}}</h3>
+            <p>{{item.des}}</p>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+
+

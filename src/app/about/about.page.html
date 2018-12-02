@@ -4,4 +4,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content style="background-color: whitesmoke">
+
+    <h6 padding>Recommended for you</h6>
+    <ion-card style="margin-top: -20px;border: 1px solid #0077FE">
+      <ion-item>
+        <div style="max-width: 70%" float-left>
+      <h6><b>Is your child refusing school?</b></h6>
+      <p style="margin-top: -10px">Dr.witc psychiatrist. . . . .</p>
+      <!--like and share buttons-->   
+    </div>
+    <div style="max-width: 30%" float-right>
+      <img src="assets/imgs/kid.jpg">
+    </div>
+    </ion-item>
+    <ion-card-content style="background-color: #0077FE">
+        <ion-icon name="heart" style="font-size: 24px;color:white"></ion-icon>
+        <ion-icon (click)="Share()" margin-left="1px" name="md-share" style="font-size: 20px;color: white;margin-left:10px"></ion-icon>
+        <ion-button fill="clear" float-right style="margin-top:-10px;color: white">Read</ion-button>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

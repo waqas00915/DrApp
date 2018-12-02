@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>doctors</ion-title>
+    <ion-buttons>
+      <ion-button (click)="pageback()" fill="clear"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+  <ion-item style="background-color:white">
+    <ion-label>
+      <ion-icon name="search"></ion-icon>
+    </ion-label>
+    <ion-input type="text" placeholder="search"></ion-input>
+  </ion-item>
+  <ion-content>
+<ion-item-divider style="background-color:lightgrey;color: black">Find & Book</ion-item-divider>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    <ion-icon name="{{item.icon}}"></ion-icon>
+    <h3>{{item.title}}</h3>
+    <p>{{item.des}}</p>
+  </ion-item>
+</ion-list>
+  </ion-content>

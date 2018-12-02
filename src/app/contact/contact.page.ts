@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: 'contact.page.html',
   styleUrls: ['contact.page.scss']
 })
-export class ContactPage {}
+export class ContactPage {
+  items:any =[1,2,3,4,5,6,7,8];
+  constructor() { }
+
+  ngOnInit() {
+  }
+  
+}
